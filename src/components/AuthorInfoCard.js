@@ -2,7 +2,7 @@ import "./AuthorInfoCard.css";
 
 const AuthorInfoCard = () => {
   return (
-    <div className="dark:bg-zinc-900 rounded-lg py-6 card">
+    <div className="bg-zinc-900 rounded-lg py-6 card">
       <div className="grid grid-cols-6">
         <div className="col-span-2 flex justify-start align-center">
           <img
@@ -13,14 +13,14 @@ const AuthorInfoCard = () => {
         </div>
         <div className="col-span-4 flex items-center align-center">
           <div className="typewriter">
-            <h1 className="dark:text-white lg:text-5xl text-xl font-bold font-silkscreen">
+            <h1 className="text-white lg:text-5xl text-xl font-bold font-silkscreen">
               fmalakis_
             </h1>
           </div>
         </div>
       </div>
       <div className="flex justify-center align-center pt-6 px-6">
-        <h1 className="dark:text-white lg:text-2xl text-lg">
+        <h1 className="text-white lg:text-2xl text-lg">
           Software Engineer, Frontend Developer
         </h1>
       </div>

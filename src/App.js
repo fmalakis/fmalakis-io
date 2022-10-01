@@ -23,7 +23,7 @@ function App() {
   }, [])
 
   return (
-    <div className="dark:bg-slate-800 min-h-screen">
+    <div className="bg-slate-800 min-h-screen">
       <div className="flex justify-center items-center">
         <section className="pt-12 lg:w-3/5 w-4/5 test">
           <AuthorInfoCard></AuthorInfoCard>

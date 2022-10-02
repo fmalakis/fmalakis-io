@@ -11,7 +11,24 @@
   transform: translateX(0);
 }
 
-@media(prefers-reduced-motion) {
+.show-more-btn {
+  animation: show-btn 2s both;
+}
+
+@keyframes show-btn {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100vw);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion) {
   .test {
     transition: none;
   }

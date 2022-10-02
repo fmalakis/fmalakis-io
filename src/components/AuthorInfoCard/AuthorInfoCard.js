@@ -1,4 +1,5 @@
 import "./AuthorInfoCard.css";
+import "../../index.css"
 
 const AuthorInfoCard = () => {
   return (
@@ -76,7 +77,7 @@ const AuthorInfoCard = () => {
           rel="noreferrer"
         >
           <svg
-            className="lg:mr-4 w-6 h-6"
+            className="lg:mr-4 w-6 h-6 white-svg"
             aria-hidden="true"
             focusable="false"
             data-prefix="fab"
@@ -97,7 +98,7 @@ const AuthorInfoCard = () => {
           rel="noreferrer"
         >
           <svg
-            className="lg:mr-4 w-6 h-6"
+            className="lg:mr-4 w-6 h-6 white-svg"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >

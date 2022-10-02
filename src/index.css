@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
 
+.white-svg {
+  filter: invert(98%) sepia(0%) saturate(7353%) hue-rotate(213deg) brightness(102%) contrast(107%);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

@@ -54,6 +54,7 @@ function App() {
       <div className="flex justify-center items-center test">
         <div className="border-l-2 border-slate-400 border-lg h-48 my-6"></div>
       </div>
+      {/* TODO: auto generate the tech info cards and all of the relevant content */}
       <section className="pb-6">
         <div className="lg:flex lg:justify-center lg:align-center pt-12 logos">
           <div className="logo test">
@@ -87,8 +88,18 @@ function App() {
             <TechInfoCard
               altText={"React Logo"}
               headerText={"ReactJS"}
+              coverObject={true}
               image={
                 "https://download.logo.wine/logo/React_(web_framework)/React_(web_framework)-Logo.wine.png"
+              }
+            ></TechInfoCard>
+          </div>
+          <div className="logo test">
+            <TechInfoCard
+              altText={"Bootstrap Logo"}
+              headerText={"Bootstrap 5"}
+              image={
+                "https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
               }
             ></TechInfoCard>
           </div>

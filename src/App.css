@@ -73,3 +73,7 @@
 .logo:nth-child(4) {
   transition-delay: 600ms;
 }
+
+.logo:nth-child(5) {
+  transition-delay: 800ms;
+}

@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import "./App.css";
 import AuthorInfoCard from "./components/AuthorInfoCard/AuthorInfoCard";
 import GenericInfoCard from "./components/GenericInfoCard/GenericInfoCard";
+import ProjectIngoCard from "./components/ProjectInfoCard/ProjectInfoCard";
 import TechInfoCard from "./components/TechInfoCard/TechInfoCard";
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
       {/* TODO: auto generate the tech info cards and all of the relevant content */}
       <section className="pb-6">
         <div className="lg:flex lg:justify-center lg:align-center pt-12 logos">
-          <div className="logo test">
+          <div className="logo test flex justify-center align-center lg:block lg:w-full">
             <TechInfoCard
               altText={"Angular Logo"}
               headerText={"Angular 2+"}
@@ -66,7 +67,7 @@ function App() {
               }
             ></TechInfoCard>
           </div>
-          <div className="logo test">
+          <div className="logo test flex justify-center align-center lg:block lg:w-full">
             <TechInfoCard
               altText={"Ionic Logo"}
               headerText={""}
@@ -75,7 +76,7 @@ function App() {
               }
             ></TechInfoCard>
           </div>
-          <div className="logo test">
+          <div className="logo test flex justify-center align-center lg:block lg:w-full">
             <TechInfoCard
               altText={"Tailwind Logo"}
               headerText={"Tailwind CSS"}
@@ -84,7 +85,7 @@ function App() {
               }
             ></TechInfoCard>
           </div>
-          <div className="logo test">
+          <div className="logo test flex justify-center align-center lg:block lg:w-full">
             <TechInfoCard
               altText={"React Logo"}
               headerText={"ReactJS"}
@@ -94,7 +95,7 @@ function App() {
               }
             ></TechInfoCard>
           </div>
-          <div className="logo test">
+          <div className="logo test flex justify-center align-center lg:block lg:w-full">
             <TechInfoCard
               altText={"Bootstrap Logo"}
               headerText={"Bootstrap 5"}
@@ -103,8 +104,38 @@ function App() {
               }
             ></TechInfoCard>
           </div>
+          <div className="logo test flex justify-center align-center lg:block lg:w-full">
+            <TechInfoCard
+              altText={"Firebase Logo"}
+              headerText={"Google Firebase"}
+              image={"https://img.icons8.com/color/480/firebase.png"}
+            ></TechInfoCard>
+          </div>
         </div>
       </section>
+      <div className="flex justify-center items-center test">
+        <div className="border-l-2 border-slate-400 border-lg h-48 my-6"></div>
+      </div>
+      <div className="flex justify-center items-center pt-12">
+        <section className="lg:w-3/5 w-4/5 test">
+          <GenericInfoCard
+            headerText={"Completed Quests"}
+            bodyText={
+              "Throughout the years, I have interacted with a plethera of people, \
+              ideas, tools and aproaches. I started working on web-related stuff around 2019 and haven't stopped ever since."
+            }
+            bottomText={"Here are some of the projects I was a part of:"}
+          ></GenericInfoCard>
+        </section>
+      </div>
+      <div className="flex justify-center items-center test">
+        <div className="border-l-2 border-slate-400 border-lg h-48 my-6"></div>
+      </div>
+      <div className="flex justify-center items-center">
+        <section className="lg:w-3/5 w-4/5 test mb-6">
+          <ProjectIngoCard></ProjectIngoCard>
+        </section>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import AuthorInfoCard from "./components/AuthorInfoCard/AuthorInfoCard";
 import GenericInfoCard from "./components/GenericInfoCard/GenericInfoCard";
@@ -7,6 +7,26 @@ import TechInfoCard from "./components/TechInfoCard/TechInfoCard";
 
 function App() {
   const showMoreRef = useRef();
+  const [projectInfo, setProjectInfo] = useState(null);
+
+  const getProjectData = () => {
+    fetch("data.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((json) => {
+        setProjectInfo(json);
+      });
+  };
+
+  useEffect(() => {
+    getProjectData();
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -57,7 +77,7 @@ function App() {
       </div>
       {/* TODO: auto generate the tech info cards and all of the relevant content */}
       <section className="pb-6">
-        <div className="lg:flex lg:justify-center lg:align-center pt-12 logos">
+        <div className=" grid gap-6 md:lg:gap-0 grid-cols-1 md:grid-cols-3 lg:grid-cols-6 lg:justify-center lg:align-center pt-12 logos">
           <div className="logo test flex justify-center align-center lg:block lg:w-full">
             <TechInfoCard
               altText={"Angular Logo"}
@@ -133,7 +153,12 @@ function App() {
       </div>
       <div className="flex justify-center items-center">
         <section className="lg:w-3/5 w-4/5 test mb-6">
-          <ProjectIngoCard></ProjectIngoCard>
+          {projectInfo && (
+            <ProjectIngoCard
+              projectInfo={projectInfo.PROJECT_INFO_CARD.CLASSIO}
+              imagePosition={"left"}
+            ></ProjectIngoCard>
+          )}
         </section>
       </div>
     </div>

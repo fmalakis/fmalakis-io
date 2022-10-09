@@ -1,10 +1,18 @@
 {
-    "PROJECT_INFO_CARD" : {
-        "CLASSIO": {
-            "NAME": "Classio ERP",
-            "IMG": "https://firebasestorage.googleapis.com/v0/b/fmalakis-io.appspot.com/o/classio_logo.png?alt=media&token=957d21c5-90f8-44c6-86cc-626e0c2fe649",
-            "DESCRIPTION": "Classio was part of a semester project turned into a full fledged idea. Built ontop of a bleeding edge stack, classio is a scalable, intuitive and modern-looking school ERP built to enable teachers, students and owners to do their job a bit easier",
-            "CTA_TEXT" : "Check out Classio"
-        }
+  "PROJECT_INFO_CARD": {
+    "CLASSIO": {
+      "NAME": "Classio ERP",
+      "IMG": "https://firebasestorage.googleapis.com/v0/b/fmalakis-io.appspot.com/o/classio_logo.png?alt=media&token=957d21c5-90f8-44c6-86cc-626e0c2fe649",
+      "DESCRIPTION": "Classio was part of a semester project turned into a full fledged idea. Built ontop of a bleeding edge stack, classio is a scalable, intuitive and modern-looking school ERP built to enable teachers, students and owners to do their job a bit easier",
+      "CTA_TEXT": "Check out Classio",
+      "CTA_LINK" : "http://classio.software/"
+    },
+    "UNIVERSIS": {
+      "NAME": "UniverSIS ERP",
+      "IMG": "",
+      "DESCRIPTION": "During my internship at the IT Center of AUTh, I was part of the SERV Team maintaining and enriching our in-house, open source registrar system's frontend, built using Angular, BootStrap, ExpressJS and more. My job consisted of adding new features, QA testing and general bugfixing.",
+      "CTA_TEXT": "Check out UniverSIS",
+      "CTA_LINK" : "https://www.universis.io/"
     }
+  }
 }

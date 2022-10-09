@@ -52,6 +52,7 @@ const AuthorInfoCard = () => {
           type="button"
           className="text-white text-2xl inline-flex items-center bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium lg:rounded-lg rounded-full text-sm px-5 py-2.5 text-center mr-6"
           rel="noreferrer"
+          aria-label="Fotis Malakis' GitHub page"
         >
           <svg
             className="lg:mr-4 w-6 h-6"
@@ -76,6 +77,7 @@ const AuthorInfoCard = () => {
           type="button"
           className="text-2xl inline-flex items-center text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium lg:rounded-lg rounded-full text-sm px-5 py-2.5 mr-6 text-center"
           rel="noreferrer"
+          aria-label="Fotis Malakis' LinkedIn page"
         >
           <svg
             className="lg:mr-4 w-6 h-6 white-svg"
@@ -97,6 +99,7 @@ const AuthorInfoCard = () => {
           type="button"
           className="text-2xl inline-flex items-center text-white bg-gradient-to-r from-stone-500 to-violet-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium lg:rounded-lg rounded-full text-sm px-5 py-2.5 text-center"
           rel="noreferrer"
+          aria-label="Fotis Malakis' email adress"
         >
           <svg
             className="lg:mr-4 w-6 h-6 white-svg"

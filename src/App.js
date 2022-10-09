@@ -57,6 +57,7 @@ function App() {
         <button
           onClick={handleShowMoreClick}
           className="absolute bottom-2 show-more-btn"
+          aria-label="Show more"
         >
           <svg
             className="w-12 h-12 white-svg"
@@ -157,6 +158,18 @@ function App() {
             <ProjectIngoCard
               projectInfo={projectInfo.PROJECT_INFO_CARD.CLASSIO}
               imagePosition={"left"}
+            ></ProjectIngoCard>
+          )}
+        </section>
+      </div>
+      <div className="flex justify-center items-center test">
+        <div className="border-l-2 border-slate-400 border-lg h-48 my-6"></div>
+      </div>
+      <div className="flex justify-center items-center">
+        <section className="lg:w-3/5 w-4/5 test mb-6">
+          {projectInfo && (
+            <ProjectIngoCard
+              projectInfo={projectInfo.PROJECT_INFO_CARD.UNIVERSIS}
             ></ProjectIngoCard>
           )}
         </section>

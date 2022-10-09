@@ -1,0 +1,10 @@
+{
+    "PROJECT_INFO_CARD" : {
+        "CLASSIO": {
+            "NAME": "Classio ERP",
+            "IMG": "https://firebasestorage.googleapis.com/v0/b/fmalakis-io.appspot.com/o/classio_logo.png?alt=media&token=957d21c5-90f8-44c6-86cc-626e0c2fe649",
+            "DESCRIPTION": "Classio was part of a semester project turned into a full fledged idea. Built ontop of a bleeding edge stack, classio is a scalable, intuitive and modern-looking school ERP built to enable teachers, students and owners to do their job a bit easier",
+            "CTA_TEXT" : "Check out Classio"
+        }
+    }
+}

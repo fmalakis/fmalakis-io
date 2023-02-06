@@ -15,7 +15,7 @@ const AuthorInfoCard = () => {
         </div>
         <div className="col-span-4 flex items-center align-center">
           <div className="typewriter">
-            <h1 className="text-white lg:text-5xl text-xl font-bold font-silkscreen">
+            <h1 className="text-white lg:text-5xl text-xl md:text-3xl font-bold font-silkscreen">
               fmalakis_
             </h1>
           </div>

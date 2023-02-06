@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const ProjectIngoCard = (props) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -21,7 +21,7 @@ const ProjectIngoCard = (props) => {
             <div className="flex justify-center items-center">
               <img
                 onClick={openLinkedPage}
-                className="object-cover md:lg:hover:cursor-pointer hover:cursor-default"
+                className="object-cover md:lg:hover:cursor-pointer hover:cursor-default w-80 h-auto"
                 alt={`${props.projectInfo.NAME} project`}
                 src={props.projectInfo.IMG}
                 href={props.projectInfo.CTA_LINK}

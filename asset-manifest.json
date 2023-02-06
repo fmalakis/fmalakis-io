@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fmalakis-io/static/css/main.cda03d04.css",
-    "main.js": "/fmalakis-io/static/js/main.7e3b35c1.js",
+    "main.css": "/fmalakis-io/static/css/main.58b1bba0.css",
+    "main.js": "/fmalakis-io/static/js/main.4f0b20ca.js",
     "static/js/787.0535d3df.chunk.js": "/fmalakis-io/static/js/787.0535d3df.chunk.js",
     "index.html": "/fmalakis-io/index.html",
-    "main.cda03d04.css.map": "/fmalakis-io/static/css/main.cda03d04.css.map",
-    "main.7e3b35c1.js.map": "/fmalakis-io/static/js/main.7e3b35c1.js.map",
+    "main.58b1bba0.css.map": "/fmalakis-io/static/css/main.58b1bba0.css.map",
+    "main.4f0b20ca.js.map": "/fmalakis-io/static/js/main.4f0b20ca.js.map",
     "787.0535d3df.chunk.js.map": "/fmalakis-io/static/js/787.0535d3df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cda03d04.css",
-    "static/js/main.7e3b35c1.js"
+    "static/css/main.58b1bba0.css",
+    "static/js/main.4f0b20ca.js"
   ]
 }

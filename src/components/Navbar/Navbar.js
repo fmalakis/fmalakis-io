@@ -15,7 +15,7 @@ const Navbar = (props) => {
         <nav
             className={`${props.className} fixed w-full z-20 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 duration-300 opacity-100 md:lg:opacity-95`}
         >
-            <div className="container flex flex-wrap items-center justify-between">
+            <div className="flex flex-wrap items-center justify-between">
                 <a href="#start" class="flex items-center pl-4 md:lg:pl-0">
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white font-silkscreen">
                         fmalakis.io

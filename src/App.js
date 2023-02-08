@@ -5,6 +5,7 @@ import GenericInfoCard from "./components/GenericInfoCard/GenericInfoCard";
 import Navbar from "./components/Navbar/Navbar";
 import ProjectIngoCard from "./components/ProjectInfoCard/ProjectInfoCard";
 import TechInfoCard from "./components/TechInfoCard/TechInfoCard";
+import Timeline from "./components/Timeline/Timeline";
 
 function App() {
     const showMoreRef = useRef();
@@ -25,6 +26,11 @@ function App() {
             .then((json) => {
                 setProjectInfo(json);
             });
+    };
+
+    const handleShowMoreClick = () => {
+        console.log("dwadaw")
+        showMoreRef.current?.scrollIntoView({behavior: "smooth"});
     };
 
     useEffect(() => {
@@ -58,10 +64,6 @@ function App() {
         };
     }, [prevScrollY]);
 
-    const handleShowMoreClick = () => {
-        showMoreRef.current?.scrollIntoView({ behavior: "smooth" });
-    };
-
     return (
         <div className="bg-slate-800 min-h-screen">
             <Navbar className={`${navbarHide}`}></Navbar>
@@ -69,9 +71,9 @@ function App() {
                 <section  className="lg:w-3/5 w-4/5 test">
                     <AuthorInfoCard></AuthorInfoCard>
                 </section>
-                {/* <button
+                <button
                     onClick={handleShowMoreClick}
-                    className="absolute bottom-2 show-more-btn"
+                    className="absolute bottom-2 show-more-btn animate-bounce"
                     aria-label="Show more"
                 >
                     <svg
@@ -81,16 +83,22 @@ function App() {
                     >
                         <path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z" />
                     </svg>
-                </button> */}
+                </button>
             </div>
-            <div  id="about" className="flex justify-center items-center pt-12">
+            <div id="about" ref={showMoreRef} className="pt-16"></div>
+            <div  className="flex justify-center items-center pt-12">
                 <section
-                    ref={showMoreRef}
                     className="lg:w-3/5 w-4/5 test"
                 >
                     <GenericInfoCard></GenericInfoCard>
                 </section>
             </div>
+            <div className="flex justify-center items-center test">
+                <div className="border-l-2 border-slate-400 border-lg h-24 my-6"></div>
+            </div>
+            <section id="timeline" className="flex justify-center items-center px-10 test">
+                <Timeline></Timeline>
+            </section>
             <div id="technologies" className="flex justify-center items-center test">
                 <div className="border-l-2 border-slate-400 border-lg h-48 my-6"></div>
             </div>

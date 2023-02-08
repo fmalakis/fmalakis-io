@@ -26,13 +26,11 @@ const GenericInfoCard = (props) => {
                     </h2>
                 </div>
             )}
-            <div className="flex justify-center align-center mt-12">
+            {props.bottomText && <div className="flex justify-center align-center mt-12">
                 <h2 className="text-white lg:text-xl text-xl">
-                    {props.bottomText
-                        ? props.bottomText
-                        : "Here's some of the frameworks as well as other technologies I have used throught my multi-year endeavor:"}
+                    {props.bottomText}
                 </h2>
-            </div>
+            </div>}
         </div>
     );
 };

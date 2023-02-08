@@ -23,7 +23,7 @@
 }
 
 .show-more-btn {
-  animation: show-btn 2s both;
+  animation: show-btn 2s both, bounce 2.5s ease infinite;
 }
 
 @keyframes show-btn {
@@ -37,6 +37,16 @@
     filter: blur(0);
     transform: translateX(0);
   }
+}
+
+@keyframes bounce {
+  70% { transform:translateY(0%); }
+  80% { transform:translateY(-15%); }
+  90% { transform:translateY(0%); }
+  95% { transform:translateY(-7%); }
+  97% { transform:translateY(0%); }
+  99% { transform:translateY(-3%); }
+  100% { transform:translateY(0); }
 }
 
 @media (prefers-reduced-motion) {

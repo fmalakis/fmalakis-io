@@ -13,11 +13,11 @@ const Navbar = (props) => {
 
     return (
         <nav
-            className={`${props.className} fixed w-full z-20 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 duration-300 opacity-100 md:lg:opacity-95`}
+            className={`${props.className} fixed w-full z-20 bg-white px-2 sm:px-4 py-2.5 rounded bg-gray-900 duration-300 opacity-100 md:lg:opacity-95`}
         >
             <div className="flex flex-wrap items-center justify-between">
                 <a href="#start" class="flex items-center pl-4 md:lg:pl-0">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white font-silkscreen">
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-white font-silkscreen">
                         fmalakis.io
                     </span>
                 </a>
@@ -25,7 +25,7 @@ const Navbar = (props) => {
                     data-collapse-toggle="navbar-default"
                     onClick={handleShowNavbarClick}
                     type="button"
-                    className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400hover:bg-gray-700 focus:ring-gray-600"
                     aria-controls="navbar-default"
                     aria-expanded="false"
                 >
@@ -50,12 +50,12 @@ const Navbar = (props) => {
                     } w-full md:block md:w-auto`}
                     id="navbar-default"
                 >
-                    <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <ul className="flex flex-col p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white bg-gray-800 md:bg-gray-900 border-gray-700">
                         <li>
                             <a
                                 href="#about"
                                 onClick={handleAnchorClick}
-                                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                             >
                                 About me
                             </a>
@@ -64,7 +64,7 @@ const Navbar = (props) => {
                             <a
                                 href="#technologies"
                                 onClick={handleAnchorClick}
-                                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                             >
                                 Technologies
                             </a>
@@ -73,7 +73,7 @@ const Navbar = (props) => {
                             <a
                                 href="#projects"
                                 onClick={handleAnchorClick}
-                                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                             >
                                 Projects
                             </a>

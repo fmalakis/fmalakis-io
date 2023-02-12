@@ -65,7 +65,8 @@ const Timeline = () => {
                             test the open source registrar platform,{" "}
                             <a
                                 className="hover:underline text-sky-500"
-                                href="https://www.universis.io/"
+                                target="_blank"
+                                href="https://www.universis.io/" rel="noreferrer"
                             >
                                 UniverSIS
                             </a>

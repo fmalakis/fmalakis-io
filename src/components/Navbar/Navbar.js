@@ -25,7 +25,7 @@ const Navbar = (props) => {
                     data-collapse-toggle="navbar-default"
                     onClick={handleShowNavbarClick}
                     type="button"
-                    className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400hover:bg-gray-700 focus:ring-gray-600"
+                    className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
                     aria-controls="navbar-default"
                     aria-expanded="false"
                 >

@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import ProjectIngoCard from "./components/ProjectInfoCard/ProjectInfoCard";
 import TechInfoCard from "./components/TechInfoCard/TechInfoCard";
 import Timeline from "./components/Timeline/Timeline";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     const showMoreRef = useRef();
@@ -215,6 +216,7 @@ function App() {
                     </section>
                 </div>
             </section>
+            <Footer></Footer>
         </div>
     );
 }
